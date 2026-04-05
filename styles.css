@@ -1,0 +1,289 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #f7f7f7;
+  padding: 20px;
+  font-size: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 40px;
+  color: #222222;
+  font-family: 'Nunito', sans-serif;
+}
+
+.screen {
+  width: 400px;
+  height: 900px;
+  background-color: beige;
+  border-radius: 20px;
+  box-shadow: 0 19px 30px rgb(212, 212, 212);
+  padding: 30px;
+}
+
+.header {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header i {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.singer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.singer-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.singer-photo img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 19px 30px rgb(252, 189, 189);
+}
+
+.singer-photo_two img {
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+  object-fit: cover;
+  box-shadow: 0 19px 30px rgb(252, 189, 189);
+}
+
+.singer-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.singer-info h1,
+.singer-info h2 {
+  margin: 0;
+}
+
+.singer-playbtn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.singer-playbtn__attr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 30px;
+  background-color: black;
+  color: white;
+  border-radius: 15px;
+}
+
+.playlist {
+  margin-top: 30px;
+}
+
+.playlist-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.playlist-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.playlist-item__img {
+  width: 90px;
+  height: 90px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.playlist-item__info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.playlist-item__artist {
+  font-size: 14px;
+  color: gray;
+}
+
+.playlist-item__title {
+  font-size: 16px;
+  font-weight: 600;
+  color: black;
+}
+
+.playlist-item__icon {
+  margin-left: auto;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.music_one,
+.music_two {
+  display: flex;
+  justify-content: center;
+}
+
+.music_one {
+  margin-top: 40px;
+}
+
+.music_two {
+  margin-top: 280px;
+}
+
+.player {
+  width: 300px;
+  height: 80px;
+  background-color: #1f1f1f;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  color: white;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  margin-top: -10px;
+}
+
+.player-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.artist {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.65);
+  margin: 0 0 6px 0;
+  font-weight: 500;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.player-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.player-controls i {
+  color: white;
+  font-size: 12px;
+}
+
+.player-controls .play-ga {
+  font-size: 18px;
+}
+
+.music-player {
+  width: 300px;
+  padding: 30px 20px 40px;
+  text-align: center;
+}
+
+.time-bar {
+  margin-bottom: 55px;
+}
+
+.time-text {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 600;
+  color: #b8b8b8;
+  margin-bottom: 12px;
+  padding: 0 2px;
+}
+
+.progress-track {
+  position: relative;
+  width: 100%;
+  height: 6px;
+  background: #e5e5e5;
+  border-radius: 999px;
+}
+
+.progress-fill {
+  width: 60%;
+  height: 100%;
+  background: #1f1f1f;
+  border-radius: 999px;
+}
+
+.progress-thumb {
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  width: 16px;
+  height: 16px;
+  background: #1f1f1f;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 42px;
+}
+
+.controls i {
+  font-size: 28px;
+  color: #111;
+}
+
+.controls .light {
+  color: #d3d3d3;
+  font-size: 24px;
+}
+
+.play-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #1b1b1f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 12px 18px rgba(120, 90, 255, 0.12);
+}
+
+.play-btn i {
+  color: white;
+  font-size: 34px;
+  margin-left: 4px;
+}
